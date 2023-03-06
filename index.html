@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THE BLOG</title>
+    <link rel="stylesheet" href="style.css" />
 
-    <style>
-      
-    </style>
-</head>
-<body>
-    <section id="seccion _lista">
-        <h1 class="important">lista de la compra <i class ="fa fa-trash"></i></h1>
-        <input type="text" id ="input">
-        <button id="guardar">Guardar</button>
-        <ul id ="lista">
-    
-        </ul>
-        
-        <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <aside id="seccionLista">
+      <h1>Lista de la compra</h1>
+      <input type="text" id="input" />
+      <button id="guardar">Guardar</button>
+      <ul id="lista"></ul>
+      <script src="listaCompra.js"></script>
+    </aside>
+
+    <section id="seccionBlog">
+      <h1>Blog</h1>
+      <section id="seccionBlogForm">
+        <form action="" id="blogForm">
+          <fieldset>
+            <legend>Crear un nuevo post</legend>
+            <label for="titulo">Titulo</label>
+            <input type="text" id="titulo" name="titulo" />
+            <br />
+            <br />
+            <label for="contenido">Contenido</label>
+            <textarea
+              name="contenido"
+              id="contenido"
+              cols="30"
+              rows="10"
+              placeholder="escribe algo..."
+            ></textarea>
+            <br />
+            <input type="submit" value="Crear" id="crear" />
+          </fieldset>
+        </form>
+      </section>
+          
+      <section id="bucadorblog">
+        <input type="text" id="buscador" placeholder="buscar un post..">
+          <button id="buscadorBoton">Buscar</button>
+          <script src="buscador.js"></script>
+      </section>
+      <section id="nuevosBlog">
+        <h2 id="tituloDeBlog">Posts</h2>
+        <article id="articleBox"></article>
+        <script src="blog.js"></script>
+      </section>
     </section>
-    <section id="seccion_blog">
-        <h1>Blog <i class ="fa fa-address-card-o"></i></h1>
-        <section id="blog_form_section">
-            <form action="" id="blog_form">
-                <fieldset>
-                    <legend>Crear un nuevo post</legend>
-                    <label for="titulo">Titulo</label>
-                    <input type="text" id="titulo" name="titulo">
-                    <br>
-                    <label for="contenido">Contenido</label>
-                    <textarea name="contenido" id="contenido" cols="30" rows="10" placeholder="escribe algo"></textarea>
-                <br>
-                <input type="submit" value="Crear">
-                </fieldset>
-            </form>
-        </section>
-        <section id="blog_section">
-            <h2>Posts</h2>
-            <article>
-            
-            </article>
-            <article>
-                <h2>tiene que quedar igual q este article </h2>   
-                <h3>titulo del post</h3>
-                <p>amfiodngdgbjbdgjgjsd</p>
-            </article>
-        </section>
-    </section>
-</body>
+  </body>
 </html>
-
-
-
-
